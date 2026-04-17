@@ -44,7 +44,7 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
 
-    implementation 'com.vungle:vungle-ads:7.7.2'
+    api 'com.vungle:vungle-ads:7.7.2'
 
 }
 
@@ -55,7 +55,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.SharifMia'
                 artifactId = 'VungleAdsSdk'
-                version = '1.0.0'
+                version = '1.0.1'
             }
         }
     }
