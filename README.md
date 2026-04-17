@@ -58,6 +58,8 @@ Initialize the SDK as early as possible (e.g., in `MainActivity.onCreate`). You 
 **In an Activity:**
 
 ```java
+import com.sharifmia.vungleadssdk.VungleAdsSdk;
+
 String APP_ID = "YOUR_VUNGLE_APP_ID";
 VungleAdsSdk.init(this, APP_ID);
 ```
@@ -65,6 +67,8 @@ VungleAdsSdk.init(this, APP_ID);
 **In a Fragment:**
 
 ```java
+import com.sharifmia.vungleadssdk.VungleAdsSdk;
+
 String APP_ID = "YOUR_VUNGLE_APP_ID";
 VungleAdsSdk.init(requireContext(), APP_ID);
 ```
@@ -83,6 +87,8 @@ boolean isReady = VungleAdsSdk.isSdkInitialized();
 Load the ad in the background, and play it when ready.
 
 ```java
+import com.sharifmia.vungleadssdk.VungleInterstitialAds;
+
 String PLACEMENT_ID = "YOUR_INTERSTITIAL_PLACEMENT_ID";
 
 // 1. Load the ad
@@ -120,6 +126,8 @@ For Rewarded Ads, you almost always want to use callbacks so you know when to re
 **A. Load with Reward Listener:**
 
 ```java
+import com.sharifmia.vungleadssdk.VungleRewardedAds;
+
 String PLACEMENT_ID = "YOUR_REWARDED_PLACEMENT_ID";
 
 VungleRewardedAds.load(this, PLACEMENT_ID, new RewardedAdListener() {
