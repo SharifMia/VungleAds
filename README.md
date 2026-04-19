@@ -43,7 +43,7 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-    implementation 'com.github.SharifMia:VungleAds:1.0.0'
+    implementation 'com.github.SharifMia:VungleAds:1.0.1'
 }
 ```
 
